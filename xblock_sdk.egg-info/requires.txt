@@ -1,0 +1,11 @@
+django_nose>=1.4.4
+lazy
+lxml
+simplejson
+XBlock>=0.5.0
+cookiecutter==0.9.0
+Django<2.0,>=1.8
+fs
+requests
+pypng
+webob

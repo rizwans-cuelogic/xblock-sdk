@@ -1,0 +1,16 @@
+(0.000) SELECT "workbench_xblockstate"."id", "workbench_xblockstate"."scope", "workbench_xblockstate"."scope_id", "workbench_xblockstate"."user_id", "workbench_xblockstate"."scenario", "workbench_xblockstate"."tag", "workbench_xblockstate"."created", "workbench_xblockstate"."state" FROM "workbench_xblockstate" WHERE ("workbench_xblockstate"."scope" = 'definition' AND "workbench_xblockstate"."tag" = 'acid' AND "workbench_xblockstate"."scope_id" = 'assessment-extended-feedback.acid.d0' AND "workbench_xblockstate"."scenario" = 'assessment-extended-feedback' AND "workbench_xblockstate"."user_id" IS NULL); args=(u'definition', 'acid', 'assessment-extended-feedback.acid.d0', 'assessment-extended-feedback')
+(0.000) BEGIN; args=None
+(0.001) UPDATE "workbench_xblockstate" SET "scope" = 'definition', "scope_id" = 'assessment-extended-feedback.acid.d0', "user_id" = NULL, "scenario" = 'assessment-extended-feedback', "tag" = 'acid', "created" = '2017-09-04 13:40:17.040972', "state" = '{
+  "UserScope.ALL_BlockScope.DEFINITION": {
+    "assessment-extended-feedback.acid.d0.u0": 3568
+  },
+  "UserScope.NONE_BlockScope.DEFINITION": {
+    "assessment-extended-feedback.acid.d0.u0": 8818
+  },
+  "content": {
+    "assessment-extended-feedback.acid.d0.u0": 4673
+  }
+}' WHERE "workbench_xblockstate"."id" = 490; args=(u'definition', u'assessment-extended-feedback.acid.d0', u'assessment-extended-feedback', u'acid', u'2017-09-04 13:40:17.040972', '{\n  "UserScope.ALL_BlockScope.DEFINITION": {\n    "assessment-extended-feedback.acid.d0.u0": 3568\n  },\n  "UserScope.NONE_BlockScope.DEFINITION": {\n    "assessment-extended-feedback.acid.d0.u0": 8818\n  },\n  "content": {\n    "assessment-extended-feedback.acid.d0.u0": 4673\n  }\n}', 490)
+"POST /handler/assessment-extended-feedback.acid.d0.u0/check_storage/SUFFIX8888?student=student_1&QUERY=8888&SCOPE=UserScope.ALL_BlockScope.DEFINITION HTTP/1.1" 200 320
+- Broken pipe from ('127.0.0.1', 56428)
+
